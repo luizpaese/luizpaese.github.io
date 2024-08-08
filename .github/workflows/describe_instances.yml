@@ -1,10 +1,10 @@
 name: Describe EC2 instances
 
 on:
-    push
+  push
 jobs:
-    describe:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Describe AWS EC2 instances
-          run: aws ec2 describe-instances
+  describe:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Describe AWS EC2 instances
+      run: aws ec2 describe-instances
